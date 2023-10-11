@@ -1,7 +1,9 @@
 from tkinter import *
 from tkinter import messagebox
 import random
-# ---------------------------- PASSWORD GENERATOR ------------------------------- #
+
+#PASSWORD GENERATOR#
+
 def generate_pass():
     letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
                'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P',
@@ -31,7 +33,9 @@ def generate_pass():
     password_input.focus()
     password_input.delete(0,END)
     password_input.insert(0,password)
-# ---------------------------- SAVE PASSWORD ------------------------------- #
+    
+#SAVE INFO#
+
 def show_alert():
     messagebox.showinfo("Alert", "One or more fields left empty!")
 
@@ -44,7 +48,8 @@ def add_to_file():
     else:
         show_alert()
 
-# ---------------------------- UI SETUP ------------------------------- #
+#UI SETUP#
+
 window = Tk()
 window.title("Password Manager")
 window.config(padx=50, pady=50)
