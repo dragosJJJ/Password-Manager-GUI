@@ -28,8 +28,8 @@ def generate_pass():
         passw += random.choice(numbers)
 
     random.shuffle(passw)
-    for char in passw:
-        password += char
+    password = "".join(passw)
+    
     password_input.focus()
     password_input.delete(0,END)
     password_input.insert(0,password)
